@@ -1,0 +1,202 @@
+@keyframes rotate {
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(-20deg);}
+    50%{transform:rotate(0deg);}
+    75%{transform:rotate(20deg);}
+    100%{transform:rotate(0deg);}
+}
+
+@keyframes expand {
+    0%{transform: scale(0.90,0.90);}
+    5%{transform: scale(0.92,0.92);}
+    10%{transform: scale(0.94,0.94);}
+    15%{transform: scale(0.96,0.96);}
+    20%{transform: scale(0.98,0.98);}
+    25%{transform: scale(1,1);}
+    30%{transform: scale(1.02,1.02);}
+    35%{transform: scale(1.04,1.04);}
+    40%{transform: scale(1.06,1.06);}
+    45%{transform: scale(1.08,1.08);}
+    50%{transform: scale(1.1,1.1);}
+    55%{transform: scale(1.08,1.08);}
+    60%{transform: scale(1.06,1.06);}
+    65%{transform: scale(1.04,1.04);}
+    70%{transform: scale(1.02,1.02);}
+    75%{transform: scale(1,1);}
+    80%{transform: scale(0.98,0.98);}
+    85%{transform: scale(0.96,0.96);}
+    90%{transform: scale(0.94,0.94);}
+    95%{transform: scale(0.92,0.92);}
+    100%{transform:scale(0.90,0.90);}
+}
+
+body{
+    background-color: black;
+}
+
+.calculadora{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 50px;
+    border-top: transparent 1px solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.sideB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    position: absolute;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    top: 45%;
+    right: 30%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation-name: expand;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.sideB:hover{
+    cursor:pointer;
+}
+
+.pantalla{
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    background-color: #baf752;
+    width: 300px;
+    height: 75px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: #E100FF;
+    border: black 3px solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    overflow: auto ;
+}
+
+.botones{
+    background-color: #8FEEDE;
+    margin-top: 69px;
+    height: 350px;
+    width: 300px;
+    margin-right:auto;
+    margin-left:auto;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.fila1, .fila2, .fila3, .fila4, .fila5{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 30px;
+    font-family: ubuntu;
+    font-size: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: background-color 300ms linear, border-radius 300ms ease-in-out;
+}
+.espaciado{
+    padding-top: 25px;
+}
+
+.boton:hover, .boton__igual:hover, .boton__AC:hover{
+    background-color: rgb(206, 200, 200);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.boton__igual, .boton__AC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: -10px;
+    width: 75px;
+    height: 40px;
+    border-radius: 60px;
+    margin-right: 10px;
+    font-family: ubuntu;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: background-color 300ms linear, border-radius 300ms ease-in-out;
+}
+
+#modo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: transparent;
+    animation: rotate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+
+#modo:hover{
+    cursor:pointer;
+}
+
+.demon{
+    background: url(../img/imgCalculadora/diablo.png);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+}
+
+.angel{
+    background: url(../img/imgCalculadora/angel.png);
+    height: 100px;
+    width: 100px;
+    background-size: cover; 
+}
+
+.aleatorio{
+    position:absolute;
+    background: url(../img/imgCalculadora/pregunta.png);
+    top: 100px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    animation-name: expand;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.aleatorio:hover{
+    cursor:pointer;
+}
+
+sup{
+    font-size: 12px;
+}

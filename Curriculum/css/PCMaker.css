@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0 auto;
+    background: rgb(19, 18, 18);
+}
+.img1{
+    background:url(../img/imgPCMaker/cpu1.jpg);
+}
+.img2{
+    background: url(../img/imgPCMaker/cpu2.jpg);
+}
+.img3{
+    background: url(../img/imgPCMaker/cpu3.jpg);
+}
+.img4{
+    background: url(../img/imgPCMaker/cpu4.jpg);
+}
+.img5{
+    background: url(../img/imgPCMaker/cpu5.png);
+}
+.img6{
+    background: url(../img/imgPCMaker/Mb1.jpg);
+}
+.img7{
+    background: url(../img/imgPCMaker/Mb2.jpg);
+}
+.img8{
+    background: url(../img/imgPCMaker/Mb3.jpg);
+}
+.img9{
+    background: url(../img/imgPCMaker/Mb4.jpg);
+}
+.img10{
+    background: url(../img/imgPCMaker/Mb5.jpg);
+}
+.img11{
+    background: url(../img/imgPCMaker/ram1.jpg);
+}
+.img12{
+    background: url(../img/imgPCMaker/ram2.jpg);
+}
+.img13{
+    background: url(../img/imgPCMaker/ram3.jpg);
+}
+.img14{
+    background: url(../img/imgPCMaker/ram4.jpg);
+}
+.img15{
+    background: url(../img/imgPCMaker/ram5.jpg);
+}
+.img16{
+    background: url(../img/imgPCMaker/gpu1.jpg);
+}
+.img17{
+    background: url(../img/imgPCMaker/gpu2.jpg);
+}
+.img18{
+    background: url(../img/imgPCMaker/gpu3.jpg);
+}
+.img19{
+    background: url(../img/imgPCMaker/gpu4.jpg);
+}
+.img20{
+    background: url(../img/imgPCMaker/gpu5.jpg);
+}
+.img21{
+    background: url(../img/imgPCMaker/hdd1.jpg);
+}
+.img22{
+    background: url(../img/imgPCMaker/hdd2.jpg);
+}
+.img23{
+    background: url(../img/imgPCMaker/hdd3.jpg);
+}
+.img24{
+    background: url(../img/imgPCMaker/hdd4.jpg);
+}
+.img25{
+    background: url(../img/imgPCMaker/hdd5.jpg);
+}
+
+.a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    height: 100%;
+    transition: background-color 300ms ease-in;
+}
+
+.elementos{
+    display: inline-block;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-family: 'Readex pro', sans-serif ;
+    color: orange;
+    font-size: 30px;
+}
+.a:hover{
+    background-color: rgba(255, 255, 255, 0.247);
+}
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+    
+}
+
+.presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/imgPCMaker/bg2.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+h1{
+    font-size: 60px;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.carrito{
+    position:absolute;
+    right: 0;
+    top: 30%;
+    height: 300px;
+    width: 175px;
+    border-radius: 10px;
+    border: white 1px solid;
+    color:blanchedalmond;
+    position: fixed;
+    z-index: 0;
+}
+
+.ctr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.img1,.img2,.img3,.img4,.img5,.img6,.img6,.img7,.img8,.img9,.img10,.img11,.img12,.img13,.img14,.img15,.img16,.img17,.img18,.img19,.img20,.img21,.img22,.img23,.img24,.img25{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 50px;
+    background-size: cover;
+}
+.precio{
+    display: inline-block;
+}
+.cpu, .ram, .Mb, .gpu, .hdd{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: white 1px solid;
+    border-radius: 10px;
+    height: 400px;
+    width: 800px;
+    overflow-x: scroll;
+    color:white;
+}
+.product{
+    background-color: transparent;
+    transition: background-color 300ms ease-in;
+}
+.product:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.288);
+}
+
+h2{
+    padding: 4px;
+    margin-top: 2px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Readex pro';
+    border-bottom: white 1px solid;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    border-top: white 1px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    top: 259px;
+    background-color: rgb(19, 18, 18);
+    height: 40px;
+    overflow: hidden;
+    font-family: 'Readex pro';
+    transition: background-color 300ms ease-in;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background-color: rgb(63, 58, 58);
+}
+
+.coste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    position: fixed;
+    height: 50px;
+    width: 175px;
+    z-index: 0;
+    right: 0;
+    border: white 1px solid;
+    border-radius: 10px;
+    top:80%;
+}
+#costo{
+    display: inline-block;
+}
+#cuerpo{
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+}
+.borrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 50px;
+    width: 175px;
+    border-radius: 10px;
+    border: white 1px solid;
+    right: 0;
+    top: 20%;
+    color:white;
+    font-family: 'Readex pro';
+    background-color: transparent;
+    z-index: 0;
+    transition: background-color 300ms ease-in;
+}
+.borrar:hover{
+    cursor:pointer;
+    background-color: rgb(63, 58, 58);;
+}

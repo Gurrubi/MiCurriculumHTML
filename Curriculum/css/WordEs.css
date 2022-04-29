@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@keyframes expd {
+    50%{transform:scale(1.15,1.15);}
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #efefef;
+    overflow: hidden;
+}
+
+h1{
+    font-family: Ubuntu;
+    color: #efefef;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin:0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px ;
+    text-shadow: #676767 0px 0px 4px;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{
+    border: 1px #414141 solid;
+    border-radius: 3px;
+    padding: 4px;
+    box-shadow: #676767 0px 0px 3px;
+}
+
+.letras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Rubik';
+    height: 66px;
+    width: 66px;
+    border: 2px #a8a8a8 solid;
+    border-radius: 3px;
+    margin: 4px;
+    text-shadow: #676767 0px 0px 4px;
+    box-shadow: inset #c7c5c5 0px 0px 3px;
+}
+
+.p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expd{
+    animation: expd 0.3s 1;
+    border-color: black;
+}
+
+#datos{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    background-color: #c7c5c5;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#nIntentos, #falladas, #acertadas{
+    display: inline-block;
+    color:#efefef
+}
+
+#intentos{
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    max-width: 200px;
+    white-space: normal;
+    text-shadow: #676767 0px 0px 4px;
+    color:#333333;
+}
+
+.blur{
+    filter:blur(4px);
+    height: 100vh;
+    width: 100%;
+    background-color: #e7e4e4;
+}
+
+#estado{
+    position: relative;
+    transition: 2s;
+    z-index: 0;
+}
+
+#juego{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: transparent;
+    height: 50vh;
+    width: 100%;
+    font-size: 100px;
+    font-family: 'Rubik';
+    z-index: 10;
+    transition: 4s;
+}
+
+.pSolucion{
+    font-size: 20px !important;
+}
+
+.recolor{
+    color:#000000 !important;
+    height: 100vh !important;
+    text-shadow: #676767 0px 0px 5px;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" consent="Victor Gutierrez Rubiño">
+        <title>Currículum</title>
+		<script type="text/javascript" src="src/javascript.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <a name="menus">
+            <div class="misDatos">
+                <div class="foto"><div class="img"></div></div>
+                <h1>Víctor Gutiérrez Rubiño</h1>
+                <div class="infoPersonal">
+                    <table class="info" cellspacing="0">
+                        <tr>
+                            <td><b>Edad: </b> 20 años</td>
+                        </tr>
+                        <tr>
+                            <td><b>Nacionalidad: </b> Español</td>
+                        </tr>
+                        <tr>
+                            <td><b>Tlfn: </b> 684 032 324</td>
+                        </tr>
+                        <tr>
+                            <td><b>E-Mail: </b> victorgutiru@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><b>DNI: </b> 78109265T</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contactos">
+                    <div class="miContacto">
+                        <div class="marco">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                        <div class="texto">Gurrubi</div>
+                    </div>
+                    <div class="miContacto">
+                        <div class="marco">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </div>
+                        <div class="texto">www.linkedin.com/in/gurrubi/</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="conjunto">
+                    <div class="fila">
+                        <a class="caja" href="#p">
+                            <ion-icon id="perfil" class="iconMenu" name="person-outline" onmouseover="realizarMov(1);"></ion-icon>
+                            <div id="perfilC" class="cajaCompl">
+                                <div class="titulo">Mi Perfil</div>
+                                <div class="texto__caja">Resumen sobre mi persona, donde comento mi SoftSkills, aptitudes en las cuales destaco, etc.</div>
+                            </div>
+                        </a>
+                        <a class="caja" href="#f">
+                            <ion-icon id="formacion" class="iconMenu" name="create-outline" onmouseover="realizarMov(2)"></ion-icon>
+                            <div id="formacionC" class="cajaCompl">
+                                <div class="titulo">Formación</div>
+                                <div class="texto__caja">Resumen sobre mi trayectoria academica y laboral, donde específico con todo detalle</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="fil2"class="fila">
+                        <a class="caja" href="#s">
+                            <ion-icon id="software" class="iconMenu" name="terminal-outline" onmouseover="realizarMov(3)"></ion-icon>
+                            <div id="softwareC" class="cajaCompl">
+                                <div class="titulo">Software</div>
+                                <div class="texto__caja">Visualización de gráficas respecto al nivel de programación que tengo en cada lenguaje</div>
+                            </div>
+                        </a>
+                        <a class="caja" href="#i">
+                            <ion-icon id="idiomas" class="iconMenu" name="language-outline" onmouseover="realizarMov(4)"></ion-icon>
+                            <div id="idiomasC" class="cajaCompl">
+                                <div class="titulo">Idiomas</div>
+                                <div class="texto__caja">Resumen donde puede ver en cuantos idiomas tengo certificado</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="ajuste" name="p">
+            <div class="pantalla">
+                <h2>Mi perfil</h2>
+                <div class="texto__pantalla">
+                    Joven con cualidades lógicas y matemáticas y alta experiencia programando. Entre mis habilidades más fuertes se encuentran la tenacidad, metalidad de crecimiento y trabajo en equipo.<br><br>
+                    Otras virtudes a destacar serían la inquietud por lo desconocido y el crecimiento personal; el perfeccionismo que deposito en cada proyecto en el que estoy involucrado, a lo que se le suma perseverancia y determinación.<br><br>
+                    A pesar de no tener experiencia laboral, a lo largo de mi transcurso acádemico he estado verdaderamente implicado en el ámbito de la programación, que me apasiona. He aquí una pequeña muestra de mi trabajo como programador, pues el diseño de este currículum es propio (HTML5, JavaScript, Css).
+                </div>
+                <!-- me caracteriza inquitud-->
+                <div class="conjunto__circulos">
+                    <div class="circulo">
+                        <div class="txt">Tenacidad</div>
+                        <div id="barra__interna1"></div>
+                    </div>
+                    <div class="circulo">
+                        <div class="txt">Mentalidad de crecimiento</div>
+                        <div id="barra__interna2"></div>
+                    </div>
+                    <div class="circulo">
+                        <div class="txt">Trabajo en equipo</div>
+                        <div id="barra__interna3"></div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </a>
+        <a name="f">
+            <div class="pantalla flex">
+                <h2 class="retoque">Formación Académica</h2>
+                <div class="formacion">
+                    <div class="conjuntoFlechas">
+                        <div id="f1" class="flecha">2018-2019</div>
+                        <div id="f2" class="flecha">2019-En Curso</div>
+                        <div id="f3" class="flecha">2021-Actual</div>
+                    </div>
+                    <div class="conjuntoBarra">
+                        <div class="formacion__barra">
+                            <div id="p1" class="pelotas"></div>
+                            <div id="p2" class="pelotas"></div>
+                            <div id="p3" class="pelotas"></div>
+                        </div>
+                    </div>
+                    <div class="formacion__texto">
+                        <div class="formacion__texto1">
+                            <i>Título de bachillerato</i><br>
+                            Título de bachillerato en la modalidad de ciencias tecnológicas, en el instituto IES José Martín Recuerda, en Motril.
+                        </div>
+                        <div class="formacion__texto2">
+                            <i>Grado en Ingeniería informática</i><br>
+                            Cursados 1º y 2º en Grado en Ingeniería Informática en Escuela Técnica Superior de Ingeniería Informática y Telecomunicaciones (ETSIIT), en Granada.
+                        </div>
+                        <div class="formacion__texto3">
+                            <i>Título Desarrollador de Aplicaciones Multiplataforma</i><br>
+                            Título de Desarrollador Software en Escuela Internacional de Gerencia (Escuela de negocios EIG), en Granada.
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a name="s">
+            <div class="pantalla">
+                <h2>Software</h2>
+                <div class="soft">
+                    <div id="java" class="barra"></div>
+                    <div id="cplus" class="barra"></div>
+                    <div id="javascript" class="barra"></div>
+                    <div id="css" class="barra"></div>
+                </div>
+            </div>
+        </a>
+        <a name="i">
+            <div class="pantalla">
+                <h2>Idiomas</h2>
+                <div class="idiom">
+                    <div class="idioma"></div>
+                </div>
+            </div>
+        </a>
+        <a class="truco" name="proyectos">
+            <div class="pantallaMitad color">
+                <h1>Mis proyectos</h1>
+                <h2>más complejos</h2>
+                <div class="todosProyectos">
+                    <div class="fila">
+                        <a target="BLANK" class="proyecto" href="./WordEs.html">WordLe</a>
+                        <a target="BLANK" class="proyecto" href="./Calculadora.html">Calculadora</a>
+                    </div>
+                    <div class="fila">
+                        <a target="BLANK" class="proyecto" href="./PCMaker.html">PCMaker</a>
+                    </div>
+                </div>
+                <a class="contacto" href="#menus">Contacto</a>
+            </div>
+        </a>
+
+
+        <div class="conjuntoBoton">
+            <div class="front" onclick="expandirBoton();">
+                <ion-icon id="suma" name="add-outline"></ion-icon>
+            </div>
+            <div class="back">
+                <a href="#p" id="profileButton">
+                    <ion-icon name="person-outline"></ion-icon>
+                </a>
+                <a href="#f" id="educationButton">
+                    <ion-icon name="create-outline"></ion-icon>
+                </a>
+                <a href="#s" id="softwareButton">
+                    <ion-icon name="terminal-outline"></ion-icon>
+                </a>
+                <a href="#i" id="languageButton">
+                    <ion-icon name="language-outline"></ion-icon>
+                </a>
+                <a href="#proyectos" id="contactButton">
+                    <ion-icon name="bulb-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" consent="Victor Gutierrez Rubiño">
+        <title>Calculadora</title>
+		<script src="src/Calculadora.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="css/Calculadora.css">
+    </head>
+    <body id="body">
+        <div class="aleatorio" onclick="generaColorAleatorio();"></div>
+        <div id="side"><div class="sideB" onclick="siguiente()">></div></div>
+        <div id="modo"><div class="demon" onclick="modoApariencia('noche','black','#4407ad','#1eff00','white','#ff9700','white');"></div></div>
+        <div class="calculadora">
+            <div id="pantalla1" class="pantalla"></div>
+            <div class="botones">
+                <div class="espaciado">
+                    <div id="pagina">
+                        <div class="fila1">
+                            <div id="9" class="boton" onclick="leer('9');">9</div>
+                            <div id="8" class="boton" onclick="leer('8');">8</div>
+                            <div id="7" class="boton" onclick="leer('7');">7</div>
+                            <div id="/" class="boton" onclick="leer('/');">/</div>
+                        </div>
+                        <div class="fila2">
+                            <div id="6" class="boton" onclick="leer('6');">6</div>
+                            <div id="5" class="boton" onclick="leer('5');">5</div>
+                            <div id="4" class="boton" onclick="leer('4');">4</div>
+                            <div id="x" class="boton" onclick="leer('x');">x</div>
+                        </div>
+                        <div class="fila3">
+                            <div id="3" class="boton" onclick="leer('3');">3</div>
+                            <div id="2" class="boton" onclick="leer('2');">2</div>
+                            <div id="1" class="boton" onclick="leer('1');">1</div>
+                            <div id="-" class="boton" onclick="leer('-');">-</div>
+                        </div>
+                        <div class="fila4">
+                            <div id="0" class="boton" onclick="leer('0');">0</div>
+                            <div id="." class="boton" onclick="leer('.');">.</div>
+                            <div id="%" class="boton" onclick="leer('%');">%</div>
+                            <div id="+" class="boton" onclick="leer('+');">+</div>
+                        </div>
+                        <div class="fila5">
+                            <div id="AC" class="boton__AC" onclick="leer('AC');">AC</div>
+                            <div id="=" class="boton__igual" onclick="leer('=');">=</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

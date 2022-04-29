@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
+
+/**AJUSTES GENERALES**/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #e0e0e0;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+i{
+    color:#119ec9;
+}
+
+.m{
+    cursor: default;
+}
+
+.color{
+    background: linear-gradient(-30deg, #48ccfd, #48fdaa);
+}
+
+.pantallaMitad{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: #19ffae 0px 0px 10px;
+    z-index: 6;
+    padding: 15px;
+}
+
+.pantalla{
+    height: 100vh;
+    width: 100%;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.retoque{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top:30px;
+}
+
+.flex{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/******************************************************************/
+
+/**MIS DATOS CURRICULUM##########################################**/
+
+a .misDatos{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 25%;
+    background:linear-gradient(to bottom, #119ec9, #19ffae);
+    padding: 20px;
+    color: #eee;
+    box-sizing: border-box;
+}
+/**AJUSTES DE LA FOTO DEL CURRICULUM**/
+a .misDatos .foto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+a .misDatos .foto .img{
+    background:url(../img/fotoCurriculum.jpeg);
+    background-size: 160px 160px;
+    background-repeat: no-repeat;
+    background-position-x: -10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+/*******************************************************************/
+/**AJUSTES PARA MI NOMBRE**/
+a .misDatos h1{
+    font-family: 'Rubik';
+    margin:0;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: #1c6b83 0px 0px 3px;
+    padding: 20px 0px 20px 0px;
+}
+/*******************************************************************/
+/**TABLA CON DATOS PERSONALES**/
+a .misDatos .infoPersonal{
+    margin-bottom:20px;
+}
+
+a .misDatos .info{
+    font-size: 20px;
+    font-family: 'Work Sans';
+    border-collapse:collapse;
+    font-weight: 300;
+}
+
+a .misDatos .info  tr td{
+    padding: 5px 20px 5px 20px;
+    border-bottom: 1px #eee solid;
+    border-top: 1px #eee solid;
+}
+/*******************************************************************/
+/**MI CONTACTO**/
+a .misDatos .contactos{
+    padding: 20px 0px 20px 20px;
+}
+
+a .misDatos .miContacto{
+    margin-bottom:10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Work Sans';
+    font-size: 20px;
+}
+
+a .misDatos .miContacto .marco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    min-width: 40px;
+    height: 40px;
+    background-color: #eee;
+    margin-right: 20px;
+}
+
+a .misDatos .miContacto .marco ion-icon{
+    height: 28px;
+    width: 28px;
+    color: #41edba;
+}
+
+a .misDatos .miContacto:nth-child(2) .texto{
+    font-size: 15px;
+}
+/*******************************************************************/
+/**###############################################################**/
+/**MENU DE SELECCIÓN##############################################**/
+/**ENCUADRAMIENTO DEL MENU**/
+.menu{
+    position: absolute;
+    top:0;
+    left:25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e0e0e0;
+    width: 75%;
+    height: 100vh;
+    z-index: 6;
+    box-sizing: border-box;
+}
+
+.menu .conjunto{
+    width: 90%;
+    height: 100%;
+}
+
+.menu .conjunto div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .conjunto .fila{
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding:20px 0px 10px 0px;
+}
+
+.menu .conjunto #fil2{
+    padding:10px 0px 20px 0px;
+}
+
+.menu .conjunto .fila .caja{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    margin-right:20px;
+}
+
+.menu .conjunto .fila .caja .cajaCompl{
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 2px;
+    background-color: #eeeeee67;
+    opacity: 0;
+    border-radius: 5px;
+    z-index: -1;
+    overflow: hidden;
+    box-shadow: #b9b9b9 0px 0px 10px;
+    box-sizing: border-box;
+    transition: 1s, opacity 0.1s;
+}
+/******************************************************************/
+/**ANIMACIONES DEL MENU**/
+
+.movPerfil{
+    top: 5% !important;
+    right: 5% !important;
+}
+
+.opacity{
+    opacity: 1 !important;
+}
+
+.anchura{
+    width: 100% !important;
+}
+
+.altura{
+    height: 100% !important;
+}
+/******************************************************************/
+/**CONFIGURACIÓN DENTRO DE LAS CAJAS**/
+
+.menu .conjunto .fila .caja .iconMenu{
+    position: absolute;
+    top:40%;
+    right:40%;
+    color:#28c78a;
+    height: 50px;
+    width: 50px;
+    transition: top 2s, right 2s;
+}
+
+.menu .conjunto .fila .caja .cajaCompl div{
+    display: block;
+}
+
+.menu .conjunto .fila .caja .cajaCompl .titulo{
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Rubik';
+    color: #1b456e;
+}
+
+.menu .conjunto .fila .caja .cajaCompl .texto__caja{
+    margin-top: 60px;
+    font-family: 'Work Sans';
+    font-weight: 300;
+    opacity: 0;
+    font-size: 15px;
+    color: #333333;
+    padding:20px;
+    transition: 2s;
+}
+/******************************************************************/
+/**RETOQUES DE LAS PANTALLAS DE INFORMACIÓN**/
+/**MI PERFIL**/
+.pantalla h2{
+    text-align: center;
+    font-family: 'Rubik';
+    color: #333333;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.pantalla .texto__pantalla{
+    text-align: justify;
+    margin-top:50px;
+    padding: 0% 20% 0% 20%;
+    font-family: 'Work Sans';
+    font-weight: 300;
+    font-size: 15px;
+    color: #333333;
+}
+
+.pantalla .conjunto__circulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 50px;
+}
+
+.pantalla .conjunto__circulos .circulo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #adadad;
+    overflow: hidden;
+    box-shadow: #adadad 2px 2px 10px;
+    transition: 0.5s;
+}
+
+.pantalla .conjunto__circulos .circulo::before{
+    content: "";
+    display: block;
+    position: relative;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    height: 192px;
+    width: 192px;
+    z-index: 1;
+}
+
+.pantalla .conjunto__circulos .circulo::after{
+    position: absolute;
+    top:0;
+    left: 0;
+    content: "";
+    display: block;
+    background-color: #119ec9;
+    height: 200px;
+    width: 100px;
+}
+
+.pantalla .conjunto__circulos .circulo #barra__interna1, 
+.pantalla .conjunto__circulos .circulo #barra__interna2,
+.pantalla .conjunto__circulos .circulo #barra__interna3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #119ec9;
+    width: 100px;
+}
+.pantalla .conjunto__circulos .circulo #barra__interna1{
+    height: 175px;
+}
+
+.pantalla .conjunto__circulos .circulo #barra__interna2{
+    height: 190px;
+}
+
+.pantalla .conjunto__circulos .circulo #barra__interna3{
+    height: 150px;
+}
+
+.pantalla .conjunto__circulos .circulo .txt{
+    position: absolute;
+    font-family: 'Barlow Condensed';
+    text-align: center;
+    z-index: 2;
+    max-width: 180px;
+    font-size: 30px;
+    cursor: default;
+}
+/******************************************************************/
+/**FORMACION ACÁDEMICA**/
+
+.pantalla .formacion{
+    position: relative;
+    display: flex;
+    text-align: justify;
+    margin-top:-50px;
+    padding: 0% 20% 0% 20%;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 15px;
+    color: #333333;
+}
+
+.pantalla .formacion .conjuntoBarra, 
+.pantalla .formacion .conjuntoFlechas,
+.pantalla .formacion .formacion__texto{
+    position: relative;
+    top:0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/**FORMACION DE LA FLECHA**/
+.pantalla .formacion .conjuntoFlechas{
+    min-width: 15%;
+}
+
+.pantalla .formacion .conjuntoFlechas #f1{
+    top:0;
+}
+
+.pantalla .formacion .conjuntoFlechas #f2{
+    top: 100px;
+    font-size: 14px;
+}
+
+.pantalla .formacion .conjuntoFlechas #f3{
+    top: 200px;
+}
+
+.pantalla .formacion .conjuntoFlechas .flecha{
+    position: absolute;
+    left: 0;
+    padding: 10px 5px 10px 5px;
+    background: linear-gradient(to right, #119ec9, #41edba);
+    font-size: 18px;
+    height: 21px;
+    color:#eee;
+}
+
+.pantalla .formacion .conjuntoFlechas .flecha::after{
+    position: absolute;
+    content: "";
+    display: flex;
+    justify-content: center;
+    right: -14px;
+    top: 6px;
+    background-color: #41edba;
+    z-index: -1;
+    height: 29px;
+    width: 29px;
+    transform: rotate(45deg);
+}
+/******************************************************************/
+/**FORMACIÓN DE LA BARRA Y PELOTAS**/
+.pantalla .formacion .conjuntoBarra{
+    min-width: 10%;
+}
+
+.pantalla .formacion .conjuntoBarra .formacion__barra{
+    position: relative;
+    width: 1px;
+    height: 300px;
+    background-color: #323232;
+}
+
+
+.pantalla .formacion .conjuntoBarra .formacion__barra #p1{  
+    top:15px;
+}
+
+.pantalla .formacion .conjuntoBarra .formacion__barra #p2{
+    top:115px;
+}
+
+.pantalla .formacion .conjuntoBarra .formacion__barra #p3{
+    top:215px;
+}
+
+.pantalla .formacion .conjuntoBarra .formacion__barra .pelotas{
+    position: absolute;
+    left:-5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #323232;
+}
+
+/*****************************************************************/
+/**FORMACIÓN DEL TEXTO**/
+
+.pantalla .formacion .formacion__texto{
+    align-items: baseline;
+    min-width: 75%;
+    font-weight: 300;
+}
+
+.pantalla .formacion .formacion__texto div{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 10px 20% 0px 0px;
+    box-sizing: border-box;
+}
+
+.pantalla .formacion .formacion__texto .formacion__texto1{
+    top: 0;
+}
+
+.pantalla .formacion .formacion__texto .formacion__texto2{
+    top: 100px;
+}
+
+.pantalla .formacion .formacion__texto .formacion__texto3{
+    top: 200px;
+}
+/*****************************************************************/
+/*****************************************************************/
+/**SOFTWARE MANEJADO**/
+.pantalla .soft{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0% 20% 0% 20%;
+    gap: 70px;
+}
+
+.pantalla .soft .barra{
+    position: relative;
+    width: 50%;
+    height: 20px;
+    background-color: #CCC;
+    border-radius: 2px;
+    font-family: 'Rubik';
+}
+
+#java::after, #cplus::after,#javascript::after,#css::after{
+    position:absolute;
+    top:-20px;
+    left: 0;
+}
+
+#java::after{
+    content: "JAVA";
+}
+
+#cplus::after{
+    content: "C++";
+}
+
+#javascript::after{
+    content:"JAVASCRIPT"
+}
+
+#css::after{
+    content:"CSS";
+}
+
+#java::before,#cplus::before,#javascript::before,#css::before{
+    content: "";
+    background: linear-gradient(30deg, #48ccfd, #48fdaa);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    height: 100%;
+}
+
+#java::before{
+    width: 70%;
+}
+
+#cplus::before{
+    width: 55%;
+}
+
+#javascript::before{
+    width: 85%;
+}
+
+#css::before{
+    width: 95%;
+}
+
+/******************************************************************/
+/**IDIOMA**/
+
+.pantalla .idiom{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0% 20% 0% 20%;
+}
+
+.pantalla .idiom .idioma{
+    position: relative;
+    background: url(../img/banderaIngalaterra.png);
+    background-size: cover;
+    height: 450px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: #333333 0px 0px 1px, #adadad 0px 0px 30px;
+}
+
+.pantalla .idioma::after{
+    content: "Inglés: Certificado de B1 en Cambridge";
+    padding: 10%;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Condensed';
+    font-weight: 600;
+    text-align: center;
+    font-size: 50px;
+    background: linear-gradient(30deg, #48ccfd, #48fdaa);
+    color: #eee;
+    opacity: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    z-index: 2;
+    transition: 1s;
+}
+
+.pantalla .idioma:hover::after{
+    opacity: 1;
+}
+
+/*****************************************************************/
+/**BOTON DEL MENU**/
+/**BOTON FRONT**/
+.conjuntoBoton{
+    position: fixed;
+    bottom:10%;
+    right: 10%;
+    height: 76px;
+    width: 76px;
+    z-index: 2;
+}
+
+.conjuntoBoton a, .conjuntoBoton div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(30deg, #48ccfd, #48fdaa);
+    border-radius: 50%;
+    box-shadow: #61b0f4 0px 2px 2px;
+    cursor: pointer;
+}
+
+.conjuntoBoton .front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.conjuntoBoton .front:active{
+    filter: brightness(150%);
+}
+
+.conjuntoBoton .front ion-icon{
+    color: #eee;
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+}
+
+/**BOTON BACK**/
+
+.conjuntoBoton .back{
+    position: absolute;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+}
+
+.conjuntoBoton .back a{
+    position: absolute;
+    top: 18px;
+    left:18px;
+    height: 40px;
+    width: 40px;
+    z-index: 3;
+    transition:top 1s, left 1s, transform 0.3s;
+}
+
+.conjuntoBoton .back a ion-icon{
+    height: 25px;
+    width: 25px;
+    color: #eee;
+}
+
+/**ANIMACIONES PARA LOS BOTONES**/
+
+.profileMove{
+    top: -50px !important;
+}
+
+.educationMove{
+    top: -3px !important;
+    left: 83px !important;
+}
+
+.softwareMove{
+    top:-3px !important;
+    left:-46px !important;
+}
+
+.languageMove{
+    top:73px !important;
+    left:58px !important;
+}
+
+.contactMove{
+    top:73px !important;
+    left: -22px !important;
+}
+
+.rotate{
+    transform: rotate(405deg);
+}
+
+/**ANIMACIONES DE LOS BOTONES :HOVER**/
+
+.conjuntoBoton .back a:hover{
+    transform: translateY(-5px);
+    filter: brightness(150%);
+}
+
+/*******************************************************************/
+/**MIS PROYECTOS Y MÁS INFORMACION**/
+
+.pantallaMitad{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pantallaMitad h1{
+    margin: 0;
+    text-align: center;
+    font-family: 'Rubik';
+    font-size: 30px;
+    color: #eee;
+}
+
+.pantallaMitad h2{
+    margin: 0;
+    text-align: center;
+    font-family: 'Work Sans';
+    font-size: 15px;
+    color: #eee;
+}
+
+.pantallaMitad .todosProyectos{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    height: 50%;
+}
+
+.pantallaMitad .todosProyectos .fila{
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    width: 100%;
+    gap: 20px;
+}
+
+.pantallaMitad .todosProyectos .fila .proyecto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    border: 1px #eee solid;
+    border-radius: 4px;
+    font-family: 'Work Sans';
+    font-weight: 300;
+    font-size: 30px;
+    color: #eee;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.pantallaMitad .todosProyectos .fila .proyecto:hover{
+    background-color: #eeeeee56;
+}
+
+.pantallaMitad .todosProyectos .fila .truco{
+    position: absolute;
+}
+
+.pantallaMitad .contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 20px;
+    color: #323232a8;
+}
+
+.pantallaMitad .contacto:hover{
+    color: #323232;
+}
